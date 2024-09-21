@@ -10,5 +10,14 @@ services:
       - "8080:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+  frontend:
+    build: .
+    container_name: pixel-art-app
+    ports:
+      - "9500:9500"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgress
+      - POSTGRES_DB=postgres
 volumes:
   pgdata:
