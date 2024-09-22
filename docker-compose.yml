@@ -15,9 +15,12 @@ services:
     container_name: pixel-art-app
     ports:
       - "9500:9500"
+      - "3000:3000"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgress
       - POSTGRES_DB=postgres
+      - POSTGRES_PORT=8080
+      - POSTGRES_HOST=localhost
 volumes:
   pgdata:
