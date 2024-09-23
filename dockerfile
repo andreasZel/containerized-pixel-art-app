@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-EXPOSE 9500
+EXPOSE 9500 3000
 
 WORKDIR /usr/src/app
 
