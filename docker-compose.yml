@@ -22,5 +22,6 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_PORT=5432
       - POSTGRES_HOST=db
+      - JWT_SECRET=eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTczMDA1MDQ1MCwiaWF0IjoxNzMwMDUwNDUwfQ.W44i_WgWuGSxYWA1hIhATGu91BqFpRmYl9FIVLoPtYc
 volumes:
   pgdata:
